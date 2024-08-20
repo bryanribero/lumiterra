@@ -78,9 +78,9 @@ body {
 .menu li a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300;
     transition: all .5s ease;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .menu li a:hover {
