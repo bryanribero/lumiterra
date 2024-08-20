@@ -95,3 +95,8 @@ body {
     width: 100%;
     height: 1050px;
 }
+
+.degrade {
+    background-color: #fff;
+    box-shadow: 5px 0 0 6px white;
+}
