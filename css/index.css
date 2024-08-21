@@ -93,6 +93,12 @@ body {
     box-shadow: 0 0 6px 8px rgba(0, 0, 0, 0.062);
 }
 
+.banner-container {
+    position: relative; /* Necesario para que el texto absoluto se posicione en relación con el contenedor */
+    width: 100%; /* Ajusta el ancho del contenedor según sea necesario */
+    height: 400px; /* Ajusta la altura del contenedor según sea necesario */
+}
+
 .img-banner {
     width: 100%;
     height: 1050px;
@@ -102,22 +108,57 @@ body {
 
 .banner-title {
     position: absolute;
-    top: 35%; /* Centrado verticalmente */
-    left: 25%; /* Centrado horizontalmente */
+    top: 60%; /* Centrado verticalmente */
+    left: 29%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
     font-size: 45px;
-    background-color: rgba(0, 0, 0, 0.308); /* Fondo semitransparente para el texto */
     color: white;
     padding: 25px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: left;
-    max-width: 30%;
-    border: 1px solid rgba(0, 0, 0, 0.089);
+    letter-spacing: 3px;
+    max-width: 35%;
+    text-decoration: overline;
 }
+
+.banner-slogan {
+    position: absolute;
+    top: 81%; /* Centrado verticalmente */
+    left: 70%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 30%;
+    transition: all .5s ease;
+}
+
+.banner-slogan2:hover {
+    transform: translate(-50%, -50%) scale(1.2);
+    background-color: rgba(0, 0, 0, 0.719);
+}
+
+.banner-slogan2{
+    position: absolute;
+    top: 120%; /* Centrado verticalmente */
+    left: 75%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+    font-size: 19px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.397);
+    box-shadow: 0 0 10px rgba(255, 211, 18, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 30%;
+    transition: all .5s ease;
+}
+
 
 .video1 {
     position: absolute;
+    top: 165%;
     bottom: 20px; /* Ajusta la distancia desde la parte inferior */
     transform: translateX(-50%) translateY(80%); /* Combina las transformaciones */
     z-index: 2; /* Asegura que el video esté sobre el banner */
