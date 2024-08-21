@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function(){
 const videos = document.querySelectorAll('.video1');
 
 videos.forEach(video => {
@@ -7,5 +8,7 @@ videos.forEach(video => {
     });
 
     video.loop = true; // Configura el video para que se reproduzca en bucle
+  });
+  
 });
 

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/cierre.css">
+    <link rel="stylesheet" href="css/herramientas.css">
     <title>Wikiterra</title>
     <link rel="icon" href="assets/yZ1K0hrINjwNsVsfj9tJ51DNo-modified.png" type="image/png" zise="48x48">
 </head>
@@ -28,7 +29,33 @@
         <div class="banner-container">
             <img src="assets/Diseño sin título.jpg" class="img-banner" alt="Banner">
 
-            <h3 class="aviso">Próximamente disponible</h3>
+            <div class="container-herramientas">
+
+                <div class="container-top-menu">
+                    <ul class="herramientas-menu">
+                        <li><button onclick="showSection('items')" id="miBoton" class="btn">Items</button></li>
+                        <li><button onclick="showSection('proximamente')" id="miBoton" class="btn">Próximamente</button></li>
+                        <li><button onclick="showSection('proximamente2')" id="miBoton" class="btn">Próximamente</button></li>
+                        <li><button onclick="showSection('proximamente3')" id="miBoton" class="btn">Próximamente</button></li>
+                    </ul>
+                </div>
+
+                <div id="content" class="content-container">
+                    <!-- Contenido cambiará aquí -->
+                    <div class="items-section">
+                        <div class="item-buttons">
+                            <button onclick="showSubSection('combate')">Items de Combate</button>
+                            <button onclick="showSubSection('mineria')">Items de Minería</button>
+                            <button onclick="showSubSection('farmeo')">Items de Farmeo</button>
+                            <button onclick="showSubSection('cosmeticos')" >Skins</button>
+                        </div>
+                        <div id="items-content" class="items-content">
+                            <!-- Contenido específico de items cambiará aquí -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -45,5 +72,6 @@
         <div class="element1">Ronin:0xcdbccd6cd614699b3fd4c1b832efda26b49cee67</div>
     </div>
     <script src="js/menu.js"></script>
+    <script src="js/herramientas.js"></script>
 </body>
 </html>
