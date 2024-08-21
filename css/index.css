@@ -136,7 +136,8 @@ body {
 
 .banner-slogan2:hover {
     transform: translate(-50%, -50%) scale(1.2);
-    background-color: rgba(0, 0, 0, 0.719);
+    background-color: rgba(0, 0, 0, 0.61);
+    box-shadow: 0 0 10px rgba(255, 211, 18, 0.5);
 }
 
 .banner-slogan2{
@@ -147,7 +148,7 @@ body {
     font-size: 19px;
     color: white;
     background-color: rgba(0, 0, 0, 0.397);
-    box-shadow: 0 0 10px rgba(255, 211, 18, 0.5);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.596);
     border: 1px solid rgba(0, 0, 0, 0.089);
     padding: 25px;
     border-radius: 20px;
