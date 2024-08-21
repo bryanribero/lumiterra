@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     padding: 6px;
     transition: all .5s ease;
+    z-index: 1000;
 }
 
 .nav.active {
@@ -30,15 +31,15 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 .logo img{
     position: absolute;
-    cursor: default;
+    cursor: pointer;
     border-radius: 50%;
     box-shadow: 0 0 4px 3px rgba(0, 0, 0, 0.171);
     width: 90px;
-    margin-top: 57px;
     margin-left: 20px;
     transition: all .5s ease;
     display: block;
@@ -49,7 +50,7 @@ body {
     color: rgb(255, 255, 255);
     text-align: center;
     margin-left: 130px;
-    margin-top: 42px;
+    margin-top: 70px;
     font-size: 20px;
     font-weight: bold;
     user-select: none;
@@ -95,10 +96,63 @@ body {
 .img-banner {
     width: 100%;
     height: 1050px;
-
+    z-index: 1;
+    object-fit: cover;
 }
 
-.degrade {
-    background-color: #fff;
-    box-shadow: 5px 0 0 6px white;
+.banner-title {
+    position: absolute;
+    top: 35%; /* Centrado verticalmente */
+    left: 25%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); /* Ajuste para centrar exactamente */
+    font-size: 45px;
+    background-color: rgba(0, 0, 0, 0.308); /* Fondo semitransparente para el texto */
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    max-width: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+.video1 {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior */
+    transform: translateX(-50%) translateY(80%); /* Combina las transformaciones */
+    z-index: 2; /* Asegura que el video esté sobre el banner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: all 0.5s ease;
+}
+
+.video1:nth-of-type(1) {
+    left: 20%;
+}
+
+.video1:nth-of-type(2) {
+    left: 79%;
+    bottom: 18px; /* Ajusta la distancia desde la parte inferior */
+}
+
+.video1:hover {
+    transform: scale(1.2) translateX(-45%) translateY(70%); 
+    z-index: 3; 
+}
+
+.img-overlay {
+    position: absolute; /* Permite posicionar la imagen libremente */
+    top: 860px; /* Ajusta la posición en relación con el contenedor */
+    right: 740px; /* Ajusta la posición en relación con el contenedor */
+    z-index: 2; /* Asegura que la nueva imagen esté sobre la imagen de fondo */
+    width: 450px; /* Ajusta el tamaño de la nueva imagen */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+
+.img-overlay:hover {
+    transform: scale(1.2);
+    z-index: 3;
 }
