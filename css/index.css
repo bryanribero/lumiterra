@@ -73,7 +73,7 @@ body {
 .menu li {
     list-style: none;
     margin: 15px;
-    margin-left: 45px;
+    margin-left: 60px;
     margin-right: 50px;
 }
 
@@ -82,7 +82,7 @@ body {
     text-decoration: none;
     font-weight: 300;
     transition: all .5s ease;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .menu li a:hover {
@@ -180,6 +180,7 @@ body {
 .video1:hover {
     transform: scale(1.2) translateX(-45%) translateY(70%); 
     z-index: 3; 
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.5);
 }
 
 .img-overlay {
@@ -197,4 +198,5 @@ body {
 .img-overlay:hover {
     transform: scale(1.2);
     z-index: 3;
+    box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.5);
 }
