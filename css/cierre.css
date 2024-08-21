@@ -1,0 +1,34 @@
+.espacio {
+    background-color: rgb(255, 255, 255);
+    padding: 400px;
+}
+
+.cierre1 {
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.671);
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+.cierre2 {
+    margin-bottom: -30px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 20px;
+    
+}
+
+.cierre3 {
+    padding-bottom: 35px;
+    padding-top: 15px;
+    width: 400px;
+    
+}
+.cierre3 a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.671);
+    transition: all .5s ease;
+}
+
+.cierre3 a:hover {
+    color: rgba(255, 255, 255, 0.986);
+}
