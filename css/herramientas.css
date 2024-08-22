@@ -54,11 +54,60 @@
 }
 
 .btn:hover {
-    color: #007BFF; /* Cambia el color del texto al pasar el mouse */
-    border-bottom: 2px solid #007BFF; /* Borde inferior visible al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+    border-bottom: 2px solid #ffffff; /* Borde inferior visible al pasar el mouse */
 }
 
 .btn.color {
-    color: #007BFF; /* Cambia el color del texto al pasar el mouse */
-    border-bottom: 2px solid #007BFF;
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+    border-bottom: 2px solid #ffffff;
+}
+
+.item-buttons {
+    background-color: rgba(0, 0, 0, 0.432);
+    max-width: 100%;
+    padding: 10px; /* Añade un padding para espaciar los elementos */
+    border-radius: 10px;
+    margin-bottom: 110%;
+}
+
+.items-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Espacia los elementos para ocupar todo el ancho */
+    align-items: stretch; /* Asegura que los elementos ocupen toda la altura del contenedor */
+}
+
+.items-menu li {
+    list-style: none;
+    flex: 1; /* Hace que cada li ocupe el mismo espacio disponible */
+    padding-left: 8px;
+}
+
+.btn-items {
+    background-color: transparent;
+    border: none;
+    color: rgb(212, 212, 212);
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho del li */
+    height: 100%; /* Asegura que el botón ocupe toda la altura del li */
+    padding: 2px 45px; /* Añade padding para mayor altura si es necesario */
+    text-align: center; /* Centra el texto del botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-items:hover {
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+    border-bottom: 2px solid #ffffff;
+}
+
+.btn-items.color {
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+    border-bottom: 2px solid #ffffff;
 }

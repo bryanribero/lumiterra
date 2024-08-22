@@ -1,17 +1,32 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-  const botones = document.querySelectorAll('.btn');
+  const botonesPrincipales = document.querySelectorAll('.btn');
 
-  // Función para manejar el clic en un botón
-  function manejarClick(event) {
-    // Elimina la clase 'active' de todos los botones
-    botones.forEach(boton => boton.classList.remove('color'));
+  // Selecciona todos los botones con la clase .btn-items
+  const botonesSecundarios = document.querySelectorAll('.btn-items');
+
+  // Función para manejar el clic en un botón principal (.btn)
+  function manejarClickPrincipal(event) {
+    // Elimina la clase 'color' de todos los botones principales
+    botonesPrincipales.forEach(boton => boton.classList.remove('color'));
     
-    // Añade la clase 'active' al botón clicado
+    // Añade la clase 'color' al botón clicado
     event.target.classList.add('color');
   }
-  
-  // Asigna el manejador de clic a cada botón
-  botones.forEach(boton => boton.addEventListener('click', manejarClick));
+
+  // Función para manejar el clic en un botón secundario (.btn-items)
+  function manejarClickSecundario(event) {
+    // Elimina la clase 'color' solo de los botones secundarios
+    botonesSecundarios.forEach(boton => boton.classList.remove('color'));
+    
+    // Añade la clase 'color' al botón clicado
+    event.target.classList.add('color');
+  }
+
+  // Asigna el manejador de clic a cada botón principal
+  botonesPrincipales.forEach(boton => boton.addEventListener('click', manejarClickPrincipal));
+
+  // Asigna el manejador de clic a cada botón secundario
+  botonesSecundarios.forEach(boton => boton.addEventListener('click', manejarClickSecundario));
 
 });

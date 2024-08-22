@@ -44,10 +44,12 @@
                     <!-- Contenido cambiará aquí -->
                     <div class="items-section">
                         <div class="item-buttons">
-                            <button onclick="showSubSection('combate')">Items de Combate</button>
-                            <button onclick="showSubSection('mineria')">Items de Minería</button>
-                            <button onclick="showSubSection('farmeo')">Items de Farmeo</button>
-                            <button onclick="showSubSection('cosmeticos')" >Skins</button>
+                          <ul class="items-menu">
+                            <li><button onclick="showSubSection('combate')" class="btn-items">Combate</button></li>
+                            <li><button onclick="showSubSection('mineria')"class="btn-items">Minería</button></li>
+                            <li><button onclick="showSubSection('farmeo')"class="btn-items">Farmeo</button></li>
+                            <li><button onclick="showSubSection('cosmeticos')" class="btn-items">Skins</button></li>
+                          </ul>
                         </div>
                         <div id="items-content" class="items-content">
                             <!-- Contenido específico de items cambiará aquí -->
