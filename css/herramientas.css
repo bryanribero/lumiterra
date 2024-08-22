@@ -3,7 +3,7 @@
     top: 50%;
     left: 200px;
     width: 80%;
-    height: 230%;
+    height: 270%;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
     z-index: 2; /* Asegúrate de que el contenido esté sobre la imagen */
     color: white; /* Color del texto */
@@ -68,7 +68,7 @@
     max-width: 100%;
     padding: 10px; /* Añade un padding para espaciar los elementos */
     border-radius: 10px;
-    margin-bottom: 110%;
+    
 }
 
 .items-menu {
@@ -111,3 +111,60 @@
     color: #ffffff; /* Cambia el color del texto al pasar el mouse */
     border-bottom: 2px solid #ffffff;
 }
+
+.section {
+    display: none;
+}
+
+#items {
+    display: block;
+}
+
+.items-content .sub-section {
+    display: none; /* Ocultar sub-secciones por defecto */
+}
+
+.proximamente {
+    display: none; /* Ocultar todas las secciones por defecto */
+    background-color: rgba(0, 0, 0, 0.432); /* Color de fondo de la sección */
+    padding: 20px; /* Espacio interno */
+    margin: 20px; /* Espacio externo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    font-size: 50px;
+}
+
+.items-content {
+    display: flex;
+    flex-direction: column; /* Apila secciones verticalmente */
+    gap: 20px; /* Espacio entre secciones */
+    padding: 0px 340px 100px; /* Espaciado alrededor de las secciones */
+    position: relative; /* Permite que los hijos con position: absolute se posicionen dentro de él */
+}
+
+.sub-section {
+    position: relative; /* Permite que los elementos hijos se posicionen en relación a esta sección */
+}
+
+.images-group {
+    display: flex; /* Alinea las imágenes en una fila horizontal */
+    gap: 20px; /* Espacio entre las imágenes */
+    position: relative; /* Permite usar top, left, bottom, right */
+    /* Ajusta la posición aquí para mover el grupo de imágenes */
+    top: 50px; /* Ajusta la posición vertical */
+    right: 290px; /* Ajusta la posición horizontal */
+    /* Puedes ajustar el tamaño del contenedor si es necesario */
+    padding-bottom: 10px;
+}
+
+.images-group img {
+    width: 47px; /* Tamaño de las imágenes */
+    background-color: rgba(2, 2, 2, 0.466); /* Color de fondo opcional */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: all .5s ease; /* Efecto de transición en hover */
+}
+
+.images-group img:hover {
+    box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.589); /* Sombra en hover */
+}
+
