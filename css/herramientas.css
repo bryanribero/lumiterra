@@ -166,5 +166,6 @@
 
 .images-group img:hover {
     box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.589); /* Sombra en hover */
+    cursor: pointer;
 }
 
