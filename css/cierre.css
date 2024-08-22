@@ -3,20 +3,6 @@
     padding: 400px;
 }
 
-.flecha {
-    position: absolute;
-    margin-top: 375px;
-    margin-left: 530px;
-    transform: translate(-50%, -50%);
-    z-index: 10000;
-    transition: all .5s ease;
-}
-
-.flecha:hover {
-    transform: translate(-50%, -50%) scale(1.2);
-    cursor: pointer;
-}
-
 .cierre {
     padding: 10px;
     color: rgba(255, 255, 255, 0.671);

@@ -1,5 +1,17 @@
 document.addEventListener('DOMContentLoaded', function(){
 
+  const botonPredeterminado = document.querySelector('.btn.default'); // Cambia el selector si es necesario
+  const botonItemPredeterminado = document.querySelector('.btn-items.default-items'); // Opcional si tienes un item predeterminado
+
+  // Añade la clase 'color' al botón predeterminado
+  if (botonPredeterminado) {
+    botonPredeterminado.classList.add('color');
+  }
+
+  if (botonItemPredeterminado) { // Si tienes un botón de item predeterminado
+    botonItemPredeterminado.classList.add('color');
+  }
+
   const botonesPrincipales = document.querySelectorAll('.btn');
 
   // Selecciona todos los botones con la clase .btn-items
