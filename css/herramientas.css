@@ -162,6 +162,7 @@
     height: 100%; /* Opcional: asegura que el cuadro de detalles tenga la misma altura que el contenedor principal */
     overflow: auto; /* Opcional: permite que el contenido sea desplazable si es demasiado grande */
     border: 1px solid rgba(255, 255, 255, 0.267);
+    overflow: hidden;
 }
 
 .images-group {
@@ -205,5 +206,22 @@
 }
 
 .container-descripcion-texto {
-    padding-top: 20px;
+    display: flex;
+    height: 100%;
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.507);
+    border-right: 1px solid rgba(255, 255, 255, 0.301);
+}
+
+.stats {
+    width: 100%; 
+}
+
+.stats ul li {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.stats hr {
+    border: 1px solid rgba(255, 255, 255, 0.301);
 }

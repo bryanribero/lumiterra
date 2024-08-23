@@ -112,7 +112,7 @@ body {
     padding: 25px;
     border-radius: 20px;
     letter-spacing: 3px;
-    max-width: 35%;
+    max-width: 30%;
     text-decoration: overline;
 }
 
@@ -181,10 +181,10 @@ body {
 
 .img-overlay {
     position: absolute; /* Permite posicionar la imagen libremente */
-    top: 860px; /* Ajusta la posición en relación con el contenedor */
-    right: 740px; /* Ajusta la posición en relación con el contenedor */
+    top: 800px; /* Ajusta la posición en relación con el contenedor */
+    right: 800px; /* Ajusta la posición en relación con el contenedor */
     z-index: 2; /* Asegura que la nueva imagen esté sobre la imagen de fondo */
-    width: 450px; /* Ajusta el tamaño de la nueva imagen */
+    width: 550px; /* Ajusta el tamaño de la nueva imagen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     transition: all .5s ease;
