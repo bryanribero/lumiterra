@@ -122,6 +122,7 @@
 
 .items-content .sub-section {
     display: none; /* Ocultar sub-secciones por defecto */
+    width: 1200px;
 }
 
 .proximamente {
@@ -134,38 +135,74 @@
     font-size: 50px;
 }
 
-.items-content {
-    display: flex;
-    flex-direction: column; /* Apila secciones verticalmente */
-    gap: 20px; /* Espacio entre secciones */
-    padding: 0px 340px 100px; /* Espaciado alrededor de las secciones */
-    position: relative; /* Permite que los hijos con position: absolute se posicionen dentro de él */
+.sub-section {
+    position: relative; /* Define el contenedor principal como relativo */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    gap: 20px; /* Espacio entre el contenedor de imágenes y el cuadro de detalles */
 }
 
-.sub-section {
-    position: relative; /* Permite que los elementos hijos se posicionen en relación a esta sección */
+.images-container {
+    position: relative; /* Posiciona los grupos de imágenes dentro de este contenedor */
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+    flex-direction: column; /* Apila los grupos de imágenes verticalmente */
+    gap: 20px; /* Espacio entre los grupos de imágenes */
+    flex: 1; /* Ocupa el espacio disponible */
+}
+
+.item-details {
+    position: absolute; /* Posiciona el cuadro de detalles de forma absoluta */
+    top: 0; /* Ajusta la posición en la parte superior del contenedor principal */
+    right: 0; /* Ajusta la posición a la derecha del contenedor principal */
+    width: 520px; /* Ancho fijo para el cuadro de detalles */ 
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    height: 100%; /* Opcional: asegura que el cuadro de detalles tenga la misma altura que el contenedor principal */
+    overflow: auto; /* Opcional: permite que el contenido sea desplazable si es demasiado grande */
+    border: 1px solid rgba(255, 255, 255, 0.267);
 }
 
 .images-group {
-    display: flex; /* Alinea las imágenes en una fila horizontal */
-    gap: 20px; /* Espacio entre las imágenes */
-    position: relative; /* Permite usar top, left, bottom, right */
-    /* Ajusta la posición aquí para mover el grupo de imágenes */
-    top: 50px; /* Ajusta la posición vertical */
-    right: 290px; /* Ajusta la posición horizontal */
-    /* Puedes ajustar el tamaño del contenedor si es necesario */
-    padding-bottom: 10px;
+    display: flex;
+    gap: 10px; /* Espacio entre las imágenes dentro de un grupo */
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten si es necesario */
 }
 
 .images-group img {
-    width: 47px; /* Tamaño de las imágenes */
-    background-color: rgba(2, 2, 2, 0.466); /* Color de fondo opcional */
-    border-radius: 10px; /* Bordes redondeados */
-    transition: all .5s ease; /* Efecto de transición en hover */
+    width: 50px; /* Tamaño uniforme para todas las imágenes */
+    height: 50px; /* Asegura que todas las imágenes tengan la misma altura */
+    object-fit: cover; /* Mantiene las proporciones de la imagen dentro del marco */
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 10px;
 }
 
 .images-group img:hover {
-    box-shadow: 0 0 12px 2px rgba(255, 255, 255, 0.589); /* Sombra en hover */
+    box-shadow: 0 0 12px 5px rgba(255, 255, 255, 0.226);
     cursor: pointer;
 }
 
+.container-descripcion-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container-descripcion-name h2{
+    font-weight: 300;
+}
+
+.img-descripcion {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+}
+
+.container-descripcion-img {
+    background-color: rgba(0, 0, 0, 0.801);
+}
+
+.container-descripcion-texto {
+    padding-top: 20px;
+}
