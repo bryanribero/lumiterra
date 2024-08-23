@@ -155,7 +155,7 @@
     position: absolute; /* Posiciona el cuadro de detalles de forma absoluta */
     top: 0; /* Ajusta la posición en la parte superior del contenedor principal */
     right: 0; /* Ajusta la posición a la derecha del contenedor principal */
-    width: 520px; /* Ancho fijo para el cuadro de detalles */ 
+    width: 540px; /* Ancho fijo para el cuadro de detalles */ 
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
@@ -208,20 +208,122 @@
 .container-descripcion-texto {
     display: flex;
     height: 100%;
-    width: 30%;
+    width: 100%;
+}
+
+.stats {
+    width: 20%;
     background-color: rgba(0, 0, 0, 0.507);
     border-right: 1px solid rgba(255, 255, 255, 0.301);
 }
 
-.stats {
-    width: 100%; 
+.stats ul {
+    list-style-type: none; /* Elimina el estilo de lista por defecto */
+    padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
-.stats ul li {
-    padding-top: 70px;
-    padding-bottom: 70px;
+.stats li {
+    padding: 5px 0; /* Ajusta el espacio superior e inferior para cada li */
+    
 }
 
-.stats hr {
+hr {
+    border: none; /* Elimina el borde por defecto del hr */
     border: 1px solid rgba(255, 255, 255, 0.301);
+     
+}
+
+.li1 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px; /* Añade espacio debajo del primer li */
+}
+
+.li1-data {
+    position: absolute;
+    left: 130px;
+}
+
+.li2 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 55px;
+}
+
+.li2 img {
+    width: 40px;
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 8px;
+}
+
+.grupo-img1 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    position: absolute;
+    top: 365px;
+    left: 115px;
+}
+
+.grupo-img2 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    position: absolute;
+    top: 410px;
+    left: 115px;
+}
+
+.grupo-img3 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    position: absolute;
+    top: 455px;
+    left: 115px;
+}
+
+.li3 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.li3 img {
+    width: 60px;
+    background-color: rgba(179, 179, 179, 0.322);
+    border: 1px solid rgba(255, 255, 255, 0.301);
+    border-radius: 8px;
+}
+
+.grupo-img4 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    position: absolute;
+    top: 515px;
+    left: 115px;
+    cursor: pointer;
+}
+
+.li4 {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+    margin-top: 10px;
+}
+
+.li4-data {
+    position: absolute;
+    text-align: left;
+    margin-top: 80px;
+    left: 130px;
 }

@@ -112,7 +112,7 @@ body {
     padding: 25px;
     border-radius: 20px;
     letter-spacing: 3px;
-    max-width: 30%;
+    max-width: 700px;
     text-decoration: overline;
 }
 
@@ -165,16 +165,16 @@ body {
 }
 
 .video1:nth-of-type(1) {
-    left: 20%;
+    left: 365px;
 }
 
 .video1:nth-of-type(2) {
-    left: 79%;
+    left: 1520px;
     bottom: 18px; /* Ajusta la distancia desde la parte inferior */
 }
 
 .video1:hover {
-    transform: scale(1.2) translateX(-45%) translateY(70%); 
+    transform: scale(1.2) translateX(-40%) translateY(70%); 
     z-index: 3; 
     box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.5);
 }
@@ -182,7 +182,7 @@ body {
 .img-overlay {
     position: absolute; /* Permite posicionar la imagen libremente */
     top: 800px; /* Ajusta la posición en relación con el contenedor */
-    right: 800px; /* Ajusta la posición en relación con el contenedor */
+    right: 685px; /* Ajusta la posición en relación con el contenedor */
     z-index: 2; /* Asegura que la nueva imagen esté sobre la imagen de fondo */
     width: 550px; /* Ajusta el tamaño de la nueva imagen */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -193,6 +193,6 @@ body {
 
 .img-overlay:hover {
     transform: scale(1.2);
-    z-index: 3;
+    z-index: 5;
     box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.5);
 }
