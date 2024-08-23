@@ -200,7 +200,8 @@
 }
 
 .container-descripcion-img {
-    background-color: rgba(0, 0, 0, 0.801);
+    background-color: rgba(0, 0, 0, 0.507);
+    border: 1px solid rgba(255, 255, 255, 0.301);
 }
 
 .container-descripcion-texto {
